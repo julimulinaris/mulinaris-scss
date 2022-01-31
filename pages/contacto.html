@@ -3,69 +3,84 @@
 <head>
     <meta name = "viewport" content = "width=device-width, initial-scale=1.0">   
     <link rel="shortcut icon" href="/malibu-mulinaris/imagenes/favicon.png">
+    <link rel="stylesheet" href="/malibu-mulinaris/bootstrap-local/css/bootstrap.css">
     <link rel="stylesheet" href="/malibu-mulinaris/estilos/style.css">
     <title>Malibú-Contactanos</title>
 </head>
-<body id="gridAreasContacto">
-    <header>
-        <h1><a href="../index.html">
-        <img class="logo" src="/malibu-mulinaris/imagenes/logo.png" alt="Logo"></a></h1><!--logo--> 
-        <nav>
-            <ul class="ulFlex">
-                <li><a href="./combos.html">Promos</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main class="main-contacto-flex">
-    <section class="contacto-titulo"><h2>Dudas o sugerencias? Escribinos!</h2>
-    <form action="">  
-        <fieldset>
-            <label for="nombre">Nombre</label>
-            <input type="text"name="Nombre"><br>
-            <label for="celular">Celular</label>
-            <input type="text"name="Celular:"><br>
-            <label for="correo">Correo:</label>
-            <input type="email"name="Mail:"><br>
-            <select name="estado civil"><br>
-            <option value="Soltero">Soltero/a</option>
-            <option value="Casado">Casado/a</option>
-            <option value="Divorciado">Divorciado/a</option><br>
-        </select>
-            Recibir ofertas por mail <input type="checkbox" name="acepta" value="1" />
-            <label for="comentario">Dejanos tu comentario:</label>
-            <textarea name="Comentario" id="" cols="50" rows="10"></textarea>
-        </fieldset>  
-        <input type="submit" value ="Limpiar">
-        <input type="submit"value="Enviar">
-    </form>
-    </section>
-    <section class="contacto-titulo">
-        <h2>Visitanos en nuestro local!</h2>
-        <iframe  class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.9593052542623!2d-64.254367384547!3d-31.360102181422867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329eb708d21569%3A0xb6308d08e093765b!2sAv.%20Carlos%20Federico%20Gauss%205300%2C%20X5021FGU%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1641489622852!5m2!1ses!2sar" width="600vh" height="350vh" style="border: double 5px;" allowfullscreen="" loading="lazy"></iframe>
+<body>
+    <!--Inicio nav-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="/malibu-mulinaris/index.html">MALIBÚ</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+        <a class="nav-link active" aria-current="page" href="/malibu-mulinaris/pages/combos.html">Promos</a>
+        <a class="nav-link active" aria-current="page" href="/malibu-mulinaris/pages/nosotros.html">Nosotros</a>
+        <a class="nav-link active" aria-current="page" href="/malibu-mulinaris/pages/contacto.html">Contacto</a>
+    </div>
+    </div>
+    </nav>
+    <!--Fin nav-->
+    <!--Inicio formulario y mapa-->
+    <main class="container">
+    <section class="row">
+        <section class="col contacto-titulo"><h2>Dudas o sugerencias? Escribinos!</h2>
+        <form class= action="">  
+            <fieldset>
+                <label for="nombre">Nombre</label>
+                <input type="text"name="Nombre"><br>
+                <label for="celular">Celular</label>
+                <input type="text"name="Celular:"><br>
+                <label for="correo">Correo:</label>
+                <input type="email"name="Mail:"><br>
+                <select name="estado civil"><br>
+                <option value="Soltero">Soltero/a</option>
+                <option value="Casado">Casado/a</option>
+                <option value="Divorciado">Divorciado/a</option><br>
+            </select>
+                Recibir ofertas por mail <input type="checkbox" name="acepta" value="1" />
+                <label for="comentario">Dejanos tu comentario:</label>
+                <textarea name="Comentario" id="" cols="50" rows="10"></textarea>
+            </fieldset>  
+            <input type="submit" value ="Limpiar">
+            <input type="submit"value="Enviar">
+        </form>
+        </section>
+        <section class="col contacto-titulo">
+            <h2>Visitanos en nuestro local!</h2>
+            <iframe  class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.9593052542623!2d-64.254367384547!3d-31.360102181422867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329eb708d21569%3A0xb6308d08e093765b!2sAv.%20Carlos%20Federico%20Gauss%205300%2C%20X5021FGU%20C%C3%B3rdoba!5e0!3m2!1ses!2sar!4v1641489622852!5m2!1ses!2sar" width="450vh" height="350vh" style="border: double 5px;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
     </section>
     </main>
-    <footer>
-        <section>
-                Seguinos en nuestras redes sociales<br>
-                <a href="https://www.facebook.com/"><img class="small" src="/malibu-mulinaris/imagenes/face.png" alt="facebook"></a> 
-                <a href="https://www.instagram.com/"><img class="small" src="/malibu-mulinaris/imagenes/instagram.png" alt="instagram"></a><br> 
+    <!--Fin formulario y mapa-->
+    <!--Inicio footer-->
+    <footer class="container-fluid">
+    <div class="row">
+        <section class="col">
+                    Seguinos en nuestras redes sociales<br>
+                    <a href="https://www.facebook.com/"><img class="small" src="/malibu-mulinaris/imagenes/face.png" alt="facebook"></a> 
+                    <a href="https://www.instagram.com/"><img class="small" src="/malibu-mulinaris/imagenes/instagram.png" alt="instagram"></a>
         </section>
-        <section class="newsletter">
+        <section class="col">
             Suscribite a nuestro newsletter
             <form>
-                <input type="text"email="nombre"placeholder="Mail"><br>
+                <input type="text"email="nombre"placeholder="Mail">
                 <input type="submit"value="Enviar">
             </form>
         </section>
-        <section>
+        <section class="col">
             <small>
-            ©Copyright 2021 <br>
-            MALIBÚ - Todos los derechos reservados
+                ©Copyright 2021 <br>
+                MALIBÚ - Todos los derechos reservados
             </small>
         </section>
+    </div>
     </footer>
+    <!--Fin footer-->
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
 
