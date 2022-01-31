@@ -25,42 +25,30 @@ img.large{
     width: 20vh;
 }
 
-header{
-    background-color:black;
-    font-family: 'Roboto', sans-serif;
-    font-size: 2vh;
-    border:solid white;
-    display:flex;
-    justify-content: space-between;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    grid-area:header;
-}
-
-nav{
+/*nav{
     font-size: 2vh;
     text-align: center;
     margin-right: 30%;
-    margin-top: 2%;
 }
 
 nav ul li{
     list-style-type: none;
     color:white;
-    margin-left: 15%;
-    margin-top:1%;
+    margin-left: 80%;
+    margin-top:2%;
 }
 
 .ulFlex{
     display:flex;
     flex-flow: row nowrap;
-    align-items: center;
+    align-items: flex-end;
 }
 
 header h1{
     margin-left:10%;
     margin-top:0;
-}
+}*/
+
 
 body {
     background-color:black;
@@ -93,18 +81,11 @@ footer {
     align-items: center;
     text-align: center;
     padding:1%;
-    border: solid white;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    grid-area:footer;
+    background-color: rgb(17, 17, 17);
 }
 
 p{
-    font-family: 'Roboto', sans-serif;
-    color:white;
-    font-size: 20px; 
-    text-align: center;
+    color:black;
 }
 
 ul li a:hover{
@@ -122,6 +103,33 @@ h2 a{
     font-family: 'Staatliches', cursive;
     color:slategray;
     text-align: center;
+}
+
+.botonGris {
+    padding: 1.3em 3em;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+}
+
+.botonGris:hover {
+    background-color: grey;
+    box-shadow: 0px 15px 20px rgb(214, 213, 213);
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.botonGris:active {
+    transform: translateY(-1px);
 }
 
 .promos{/*Las mejores promos*/  
@@ -179,68 +187,27 @@ h2 a{
     font-size: 2vh;
     padding: 2%;
     background-color: black; 
-    grid-area: sectionUno;
-    display: grid;
-    grid-template-rows: 5% 50% auto;
 }
 
 .nosotrosIndex{
-    margin-top: 8%;
     text-align: justify;
     font-size: 2vh;
     background-color:black;
     color:white;
 }
 
-.local{/*foto del local en index*/
-    width: 30%;
-    border-radius: 15%;
-    margin-left:30%;
-}
-
 .wspYPresupuesto{
-    margin: 3% 10% 0 10%;
-    padding:3%;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
+    margin: 3%;
     grid-area: sectionDos;
 }
 
 .wspYPresupuestoCombos{
-    margin: 3% 10% 0 10%;
+    margin: 3%;
     padding:3%;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
     grid-area: wspYPresupuesto;
-}
-
-button {
-    padding: 1.3em 3em;
-    font-size: 12px;
-    text-transform: uppercase;
-    letter-spacing: 2.5px;
-    font-weight: 500;
-    color: #000;
-    background-color: #fff;
-    border: none;
-    border-radius: 45px;
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-    outline: none;
-}
-
-button:hover {
-    background-color: grey;
-    box-shadow: 0px 15px 20px rgb(214, 213, 213);
-    color: #fff;
-    transform: translateY(-7px);
-}
-
-button:active {
-    transform: translateY(-1px);
 }
 
 .nosotros h3{
@@ -323,475 +290,4 @@ button:active {
     "footer footer";
     grid-template-columns: 100%;
     grid-template-rows: 14% 70% auto;
-}
-
-/*SMARTPHONE*/
-@media (max-width: 480px){
-header{
-    display:flex;
-    flex-direction: column;
-    width:100%;
-    border:none;
-}  
-
-nav{
-    font-size: 80%;
-    background-color: #fff;
-    width:100%;
-}
-
-nav ul li{
-    list-style-type: none;
-    color:black;
-    align-items: center;
-    margin-left: 1%;
-    width: 100%;
-}
-
-ul li a:hover{
-    background:black;
-    color: #000;
-}
-
-a {
-    text-decoration:none;
-    color:black;
-}
-
-footer{
-    flex-direction: column;
-    font-size: 100%;
-    align-items: center;
-}
-
-h3{
-    font-size:2vh;
-    background-color: red;
-}
-
-.mainPresupuesto{
-    grid-area:mainPresupuesto;
-}
-
-.ulFlex{
-    display:flex;
-    flex-direction: row;
-}
-
-.newsletter{
-    padding:5%;
-}
-
-.logo{
-    width:70%;
-    margin-top: 2%;
-    margin-left:8%;
-}
-
-.Index{/*título del index*/
-    font-size: 30px;
-    padding: 2%;
-    background-color: black; 
-    display: grid;
-    grid-template-columns: 100%;
-}
-
-.nosotrosIndex{
-    margin-top: 12%;
-    text-align: justify;
-    font-size: 90%;
-    background-color:black;
-    color:white;
-}
-
-.tituloIndex{
-    margin-top: 5%;
-}
-
-.local{/*foto del local en index*/
-    display:none;
-}
-
-.wspYPresupuesto{
-    font-size:30px;
-    flex-direction: column;
-    margin-left: 10%;
-    text-align: center;
-    align-items: center;
-    margin-bottom:2%;
-    margin-top:1%;
-    justify-content: space-between;
-}
-
-.wspYPresupuestoCombos{
-    font-size:22px;
-    flex-direction: column;
-    margin-left: 10%;
-    text-align: center;
-    padding: 5%;
-    margin-bottom:0;
-    margin-top:50%;
-}
-
-.wspYPresupuesto a{
-    text-decoration:none;
-    color:white;
-}
-
-.wspYPresupuestoCombos a{
-    text-decoration:none;
-    color:white;
-}
-
-.wsp-img{
-    margin-left: 0%;
-}
-
-.presu-img{
-    margin-left: 0%;
-}
-
-img.small{
-    width: 40px;
-    height: 40px;
-}
-
-.promosGrid{
-    display:grid;
-    grid-template-columns: 2fr;
-}
-
-.gridNosotros{
-    display:grid;
-    grid-template-columns: 100%;
-}
-
-.nosotros a{
-    color:whitesmoke;
-}
-
-.main-contacto-flex{
-    margin-top:10%;
-}
-
-.contacto-titulo form{
-    text-align: left;
-    background-color:white;
-    color:black;
-    font-size: 60%;
-    padding: 1%;
-    margin-top:1%;
-    width:80%;
-}
-
-.mapa{
-    width: 80%;
-    border:none;
-}
-
-.solicitaPresup{
-    font-size: 2vh;
-    margin-top: 15%;
-}
-
-.presupuesto{
-    width: 90%;
-    margin-left: 5%;  
-    padding:1%;
-    margin-top:3%;
-    margin-bottom:3%;
-    margin-right:5%;
-}
-
-.subtituloPresup{
-    font-style: 20%;
-    background-color: black;
-}
-
-#gridAreasIndex{
-    display:grid;
-    grid-template-areas: "header"
-    "sectionUno"
-    "sectionDos"
-    "footer";
-    grid-template-rows: 20% 30% 30% 25%;
-    grid-template-columns: 100%;
-}
-
-#gridAreasCombos{
-    display:grid;
-    grid-template-areas: "header header"
-    "promos promos"
-    "wspYPresupuesto wspYPresupuesto"
-    "footer footer";
-    grid-row-gap: 2%;
-    grid-template-columns: 100%;
-    grid-template-rows: auto 75% 10% 10%;
-}
-
-#gridAreasNosotros{
-    display:grid;
-    grid-template-areas: "header"
-    "gridNosotros"
-    "footer";
-    grid-template-columns: 100%;
-    grid-template-rows: 10% 80% auto;
-}
-
-#gridAreasContacto{
-    display:grid;
-    grid-template-areas: "header header"
-    "main-contacto-flex main-contacto-flex"
-    "footer footer";
-    grid-template-columns: 100%;
-    grid-template-rows: 10% auto 20%;
-}
-
-#gridAreasPresupuesto{
-    display:grid;
-    grid-template-areas: "header"
-    "mainPresupuesto"
-    "footer";
-    grid-template-columns: 100%;
-    grid-template-rows: 15% 70% auto;
-}
-}
-
-/*TABLET*/
-@media (min-width: 481px) and (max-width:1023px){
-header{
-    display:flex;
-    flex-direction: column;
-    border:none;
-    width:100%;
-}  
-
-nav{
-    font-size: 90%;
-    text-align: center;
-    margin-top: 2%;
-    background-color: white;
-    width: 100%;
-    color:black;
-}
-
-footer{
-    flex-direction: column;
-    font-size: 100%;
-    background-color: rgb(221, 218, 218);
-    border:none;
-    color:black;
-    width: 100%;
-}
-
-nav ul li{
-    list-style-type: none;
-    color:black;
-    margin-left:auto;
-    margin-right:auto;
-    align-items: center;
-}
-
-ul li a:hover{
-    background:black;
-    color: #000;
-}
-
-a {
-    text-decoration:none;
-    color:black;
-}
-
-h2{
-    margin-top: 0;
-    font-size:3vh;
-}
-
-h3{
-    font-size:2vh;
-    background-color: red;
-}
-
-.wspYPresupuesto a{
-    text-decoration:none;
-    color:white;
-}
-
-.wspYPresupuestoCombos a{
-    text-decoration:none;
-    color:white;
-}
-
-.ulFlex{
-    display:flex;
-    flex-direction: row;
-}
-
-.newsletter{
-    padding:5%;
-}
-
-.logo{
-    width:60%;
-    margin-top: 2%;
-    margin-left:8%;
-}
-
-.Index{/*título del index*/
-    font-size: 30px;
-    padding: 2%;
-    background-color: black; 
-    display: grid;
-    grid-template-columns: 100%;
-}
-
-.nosotrosIndex{
-    margin-top: 10%;
-    text-align: justify;
-    font-size: 2vh;
-    background-color:black;
-    color:white;
-}
-
-.tituloIndex{
-    margin-top:2%;
-    font-size: 9vw;
-}
-
-.local{/*foto del local en index*/
-    width: 70%;
-    border-radius: 15%;
-    margin-top:10%;
-    margin-left:10%;
-    margin-bottom:10%;
-}
-
-.wspYPresupuesto{
-    font-size:22px;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding:5%;
-    margin-top: 7%;
-}
-
-.wspYPresupuestoCombos{
-    font-size:22px;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-    padding:5%;
-    margin-top:10%;
-}
-
-img.small{
-    width: 40px;
-    height: 40px;
-}
-
-.promos{
-    margin-top:10%;
-    margin-bottom:2%;
-}
-
-.promosGrid{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-row-gap:2%;
-}
-
-.nosotros{
-    font-size:3vw;
-}
-
-.nosotros a{
-    color:whitesmoke;
-}
-
-.gridNosotros{
-    margin-top:10%;
-}
-
-.contacto-titulo{
-    font-size:2vh;
-    margin-bottom: 10%;
-}
-
-.main-contacto-flex{
-    margin-top:10%;
-    margin-left:10%;
-    margin-right:10%;
-}
-
-.mapa{
-    width:95%;
-}
-
-.solicitaPresup{
-    margin-top:15%;
-    font-size: 3vh;
-    margin-bottom: 0;
-}
-
-.presupuesto{
-    width: 80%;
-    margin-left: 5%;  
-    padding:5%;
-    margin-top:1%;
-    margin-bottom:3%;
-    margin-right:5%;
-}
-
-.subtituloPresup{
-    font-size: 2vh;
-    background-color: black;
-}
-
-#gridAreasIndex{
-    display:grid;
-    grid-template-areas: "header"
-    "sectionUno"
-    "sectionDos"
-    "footer";
-    grid-template-columns: 100%;
-    grid-template-rows: 13% 50% 30% auto;
-}
-
-#gridAreasCombos{
-    display:grid;
-    grid-template-areas: "header header"
-    "promos promos"
-    "wspYPresupuesto wspYPresupuesto"
-    "footer footer";
-    grid-row-gap: 2%;
-    grid-template-columns: 100%;
-    grid-template-rows: 10% 50% 30% auto;
-}
-
-#gridAreasNosotros{
-    display:grid;
-    grid-template-areas: "header header"
-    "gridNosotros gridNosotros"
-    "footer footer";
-    grid-template-columns: 100%;
-    grid-template-rows: 10% 80% auto;
-}
-
-#gridAreasContacto{
-    display:grid;
-    grid-template-areas: "header"
-    "main-contacto-flex"
-    "footer";
-    grid-template-columns: 100%;
-    grid-template-rows: 10% auto 20%;
-}
-
-#gridAreasPresupuesto{
-    display:grid;
-    grid-template-areas: "header"
-    "mainPresupuesto"
-    "footer";
-    grid-template-columns: 100%;
-    grid-template-rows: 20% 60% auto;
-}
 }
