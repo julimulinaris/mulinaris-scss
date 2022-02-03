@@ -63,14 +63,14 @@ p{
     color:black;
 }
 
-ul li a:hover{
-    background:whitesmoke;
-    color:black;
-}
-
 a {
     text-decoration:none;
-    color:whitesmoke;
+    color: rgb(209, 194, 194);
+}
+
+a:hover{
+    text-decoration:none;
+    color:grey;
 }
 
 h2 a{
@@ -121,6 +121,16 @@ h2 a{
     color:black;
     font-size:1rem;
     padding:2%;
+    width:100%;
+}
+
+.inputFormulario{
+    width:30%;
+}
+
+.comentarioFormulario{
+    padding:2%;
+    width:90%;
 }
 
 .presupuesto{
@@ -166,11 +176,12 @@ h2 a{
 }
 
 .solicitaPresup {
-    font-size:30px;
     margin-top:2%;
+    font-size:3vh;
     text-align:center;
 }
 
 .subtituloPresup{
     text-align:center;
+    font-size:2vh;
 }
